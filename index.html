@@ -1,7 +1,140 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fine Piece Productions</title>
+    <style>
+        /* General Reset */
+        body, h1, h2, p, ul, li, a, input, button {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Courier New', monospace;
+            background-color: #ffb6c1; /* Baby pink */
+            color: black;
+            line-height: 1.6;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        /* Layout */
+        header {
+            text-align: center;
+            padding: 20px;
+            color: black;
+            background-color: #ffb6c1; /* Match background */
+        }
+        header img {
+            width: 150px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        header h1 {
+            font-size: 2.5rem;
+        }
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+            background: white; /* Light background for contrast */
+        }
+        .hero h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        .hero button {
+            background: black;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        .section {
+            padding: 50px 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        .about, .services, .contact {
+            margin-bottom: 30px;
+        }
+        .about h2, .services h2, .contact h2 {
+            color: black; /* Black for text headers */
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+        .services img, .services video {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 10px 0;
+            border: 1px solid black; /* Accent border */
+        }
+        .contact form {
+            display: flex;
+            flex-direction: column;
+        }
+        .contact input, .contact textarea, .contact button {
+            margin-bottom: 15px;
+            padding: 10px;
+            font-size: 1rem;
+            border: 1px solid black;
+        }
+        .contact button {
+            background: black;
+            color: white;
+            cursor: pointer;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #ffc1cc; /* Lighter pink for footer */
+            color: black;
+        }
+    </style>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <header>
+        <img src="Fine_Piece_Productions_Logo_Resized.png" alt="Fine Piece Productions Logo">
+        <h1>Fine Piece Productions</h1>
+    </header>
+    <section class="hero">
+        <h2>Your Business Tagline Goes Here</h2>
+        <button>Learn More</button>
+    </section>
+    <section class="about section">
+        <h2>About Us</h2>
+        <p>We bring your vision to life with high-quality media production and creative services. Let’s create something amazing together.</p>
+    </section>
+    <section class="services section">
+        <h2>Our Services</h2>
+        <img src="https://via.placeholder.com/800x400" alt="Placeholder Image">
+        <video controls>
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+    <section class="contact section">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 Fine Piece Productions. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
+"""
+
+# Saving the updated HTML code as a new file.
+updated_file_path = "/mnt/data/Fine_Piece_Productions_Homepage.html"
+with open(updated_file_path, "w") as file:
+    file.write(updated_html_code)
+
+updated_file_path
