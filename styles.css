@@ -1,26 +1,34 @@
 body {
-    background-color: #FFC0CB; /* Baby pink */
+    background-color: #f4a8c4; /* Soft pink */
     color: black;
-    font-family: 'Courier New', monospace; /* Typewriter style font */
+    font-family: 'Courier New', monospace;
     text-align: center;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: white;
-    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+.logo img {
+    width: 120px; /* Smaller logo */
 }
 
 nav a {
-    margin: 0 15px;
     text-decoration: none;
     color: black;
-    font-weight: bold;
+    font-size: 18px;
+    margin: 0 15px;
 }
 
-footer {
-    margin-top: 20px;
-    background-color: white;
-    padding: 10px;
+nav a:hover {
+    text-decoration: underline;
+}
+
+.social {
+    font-size: 22px;
 }
