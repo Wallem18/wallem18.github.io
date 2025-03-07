@@ -29,6 +29,13 @@ nav a:hover {
     text-decoration: underline;
 }
 
-.social {
-    font-size: 22px;
+.social img {
+    width: 18px; /* Smaller icons */
+    height: auto;
+    vertical-align: middle;
+    transition: opacity 0.3s;
+}
+
+.social img:hover {
+    opacity: 0.7; /* Slight fade effect on hover */
 }
