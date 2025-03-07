@@ -1,0 +1,26 @@
+body {
+    background-color: #FFC0CB; /* Baby pink */
+    color: black;
+    font-family: 'Courier New', monospace; /* Typewriter style font */
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: white;
+    padding: 20px;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+footer {
+    margin-top: 20px;
+    background-color: white;
+    padding: 10px;
+}
